@@ -1,4 +1,4 @@
-#Määrittelydokumentti
+# Määrittelydokumentti
 
 Aiheenani on Kivi-Sakset-Paperi-peluri. 
 Eli tekoäly jonka kanssa voi pelata perinteistä Kivi-Sakset-Paperi peliä Markovin ketjuja käyttäen.
