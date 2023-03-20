@@ -1,5 +1,10 @@
 # TiraLabra 2023
 
-Aiheena: Kivi-Sakset-Paperi-peluri
+Aiheenani on Kivi-Sakset-Paperi-peluri. 
 
-Kieli: Python
+[määrittelydokumentti](https://github.com/KilpiV/TiraLabra2023/blob/main/Dokumentaatio/maarittelydokumentti.md)
+
+
+## Viikkoraportit
+
+[viikko 1](https://github.com/KilpiV/TiraLabra2023/blob/main/Dokumentaatio/Viikkoraportit/Viikko1.md)
