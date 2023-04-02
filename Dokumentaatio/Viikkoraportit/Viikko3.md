@@ -6,6 +6,6 @@ Lisätty kommentointia koodiin.
 
 Aloitettu testausten tekoa.
 
-Tehty alustava testausdokumentti.
+Tehty alustava testausdokumentti. Otettu käyttöön pylint ja coverage.
 
 
