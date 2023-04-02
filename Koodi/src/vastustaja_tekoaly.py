@@ -1,6 +1,11 @@
 import random
 
 class Vastustaja:
+    """Luokka, joka huolehtii vastustajan valinnoista.
+    Attribuutit:
+        valinta: Vastustajan valinta.
+    """
+  
     def __init__(self):
         self._valinta = 0
 
@@ -12,5 +17,5 @@ class Vastustaja:
         elif self._valinta == 2:
             return "s"
         else:
-            return "p"
-    
+            return "p"    
+            

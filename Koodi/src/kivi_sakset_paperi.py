@@ -3,6 +3,9 @@ from vastustaja_tekoaly import Vastustaja
 from tulokset import Tulokset
 
 class KiviSaksetPaperi:
+    """Pelilogiika
+
+    """
 
     def kivi_sakset_paperi_peli(self):
         tulokset = Tulokset()

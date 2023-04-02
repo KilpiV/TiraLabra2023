@@ -1,4 +1,12 @@
 class Tulokset:
+    """Luokka, joka huolehtii tulosten tallennuksen ja haut
+
+    Attribuutit: 
+        pelaajan pisteet: Integer, joka kertoo käyttäjän pisteet
+        vastustajan pisteet: Integer, joka kertoo tekoälyn pisteet
+        tasapeli: Integer, joka kertoo tasapelien määrän
+        tulokset: lista, jossa tuplet; pelaajan valinta ja lopputulos
+    """
     def __init__(self):
         self.pelaaja_pisteet = 0
         self.vastustaja_pisteet = 0
