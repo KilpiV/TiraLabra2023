@@ -1,3 +1,6 @@
+from puu import Puu
+from malli import Malli
+
 class Tulokset:
     """Luokka, joka huolehtii tulosten tallennuksen ja haut
 
@@ -7,11 +10,15 @@ class Tulokset:
         tasapeli: Integer, joka kertoo tasapelien määrän
         tulokset: lista, jossa tuplet; pelaajan valinta ja lopputulos
     """
-    def __init__(self):
+    def __init__(self):#, mallien_maara):
         self.pelaaja_pisteet = 0
         self.vastustaja_pisteet = 0
         self.tasapeli = 0
         self.tulokset = []
+        self.mallit = []
+        #for i in range(mallien_maara):
+        #    self.mallit.append(Malli(i+1, 5))
+        # self.viimeiset = "" # esim kkpks
 
     def __str__(self):
         return f"Pistetilanne: {self.pelaaja_pisteet} - {self.vastustaja_pisteet}"

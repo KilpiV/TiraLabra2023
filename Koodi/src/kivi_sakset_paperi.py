@@ -3,7 +3,7 @@ from vastustaja_tekoaly import Vastustaja
 from tulokset import Tulokset
 
 class KiviSaksetPaperi:
-    """Pelilogiika
+    """Pelilogiikka
 
     """
 

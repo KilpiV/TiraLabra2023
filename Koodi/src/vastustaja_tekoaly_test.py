@@ -8,5 +8,3 @@ class TestVastustaja(unittest.TestCase):
     def test_aloitus_valinta_oikein(self):
         self.assertEqual(self.vastustaja._valinta, 0)
 
-    def test_testi_testi(self):
-        self.assertEqual("hi", "hi")  
