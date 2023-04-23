@@ -1,5 +1,7 @@
 # TiraLabra 2023
 
+![GitHub Actions](https://github.com/<KilpiV>/<TiraLabra2023>/workflows/<CI>/badge.svg)
+
 Aiheenani on Kivi-Sakset-Paperi-peluri. 
 
 [määrittelydokumentti](https://github.com/KilpiV/TiraLabra2023/blob/main/Dokumentaatio/maarittelydokumentti.md)
