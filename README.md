@@ -19,7 +19,7 @@ Aiheenani on Kivi-Sakset-Paperi-peluri.
 
 [viikko 4](https://github.com/KilpiV/TiraLabra2023/blob/main/Dokumentaatio/Viikkoraportit/Viikko4.md)
 
-'[viikko 5](https://github.com/KilpiV/TiraLabra2023/blob/main/Dokumentaatio/Viikkoraportit/Viikko5.md)'
+[viikko 5](https://github.com/KilpiV/TiraLabra2023/blob/main/Dokumentaatio/Viikkoraportit/Viikko5.md)
 
 
 
