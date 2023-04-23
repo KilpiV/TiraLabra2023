@@ -12,7 +12,8 @@ class TestTulokset(unittest.TestCase):
         self.assertEqual([], self.tulokset.tulokset)
 
     def test_antaa_tuloksen(self):
-        self.assertEqual(f"\n Pistetilanne:\n pelaaja - tekoäly \n       0 - 0", str(self.tulokset))
+        self.assertEqual(f"\n Pistetilanne:\n pelaaja - tekoäly \
+            \n       0 - 0", str(self.tulokset))
 
     def test_lisaa_tulos(self):
         pass

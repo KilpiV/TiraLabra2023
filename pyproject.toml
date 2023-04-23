@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "koodi"
+name = "src"
 version = "0.1.0"
 description = ""
 authors = ["Kilpivii <viivi.kilpiainen@gmail.com>"]

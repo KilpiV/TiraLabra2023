@@ -14,8 +14,8 @@ class Tulokset:
         self.tulokset = []
 
     def __str__(self):
-        return f"\n Pistetilanne:\n pelaaja - tekoäly \n \
-            {self.pelaaja_pisteet:7} - {self.vastustaja_pisteet}"
+        return f"\n Pistetilanne:\n pelaaja - tekoäly \
+            \n {self.pelaaja_pisteet:7} - {self.vastustaja_pisteet}"
 
     def tulos(self, pelaaja, vastustaja):
         self.tulokset += pelaaja
