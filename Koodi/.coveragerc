@@ -1,3 +1,3 @@
 [run]
-source = src
+source = Koodi/src
 omit = src/tests/**, src/index.py
