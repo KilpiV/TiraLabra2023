@@ -39,11 +39,10 @@ class Malli:
     def voittaja(self, pelaaja, malli):
         if pelaaja == malli:
             return 0
-        elif pelaaja == "k" and malli == "p":
+        if pelaaja == "k" and malli == "p":
             return 1
-        elif pelaaja == "p" and malli == "s":
+        if pelaaja == "p" and malli == "s":
             return 1
-        elif pelaaja == "s" and malli == "k":
+        if pelaaja == "s" and malli == "k":
             return 1
-        else:
-            return -1
+        return -1

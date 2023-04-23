@@ -14,7 +14,8 @@ class Tulokset:
         self.tulokset = []
 
     def __str__(self):
-        return f"\n Pistetilanne:\n pelaaja - tekoäly \n {self.pelaaja_pisteet:7} - {self.vastustaja_pisteet}"
+        return f"\n Pistetilanne:\n pelaaja - tekoäly \n \
+            {self.pelaaja_pisteet:7} - {self.vastustaja_pisteet}"
 
     def tulos(self, pelaaja, vastustaja):
         self.tulokset += pelaaja
@@ -31,21 +32,21 @@ class Tulokset:
     def _pelaaja_voittaa(self, pelaaja, vastustaja):
         if pelaaja == "k" and vastustaja == "s":
             return True
-        elif pelaaja == "s" and vastustaja == "p":
+        if pelaaja == "s" and vastustaja == "p":
             return True
-        elif pelaaja == "p" and vastustaja == "k":
+        if pelaaja == "p" and vastustaja == "k":
             return True
-    
+        return False
+
     def lopputilasto(self):
-        palautus = (f"\nLopputulokset:\n\n")
+        palautus = "\nLopputulokset:\n\n"
         palautus +=(f"Pelejä yhteensä {len(self.tulokset)}\n")
         palautus += (f"Pelaajan voitot: {self.pelaaja_pisteet}\n")
         palautus += (f"Pelaajan tappiot: {self.vastustaja_pisteet}\n")
         palautus += (f"Tasapelit: {self.tasapeli}\n")
         if self.pelaaja_pisteet > self.vastustaja_pisteet:
             return palautus + "Pelaaja voittaa"
-        elif self.pelaaja_pisteet < self.vastustaja_pisteet:
+        if self.pelaaja_pisteet < self.vastustaja_pisteet:
             return palautus + "Tekoäly voittaa"
-        else:
-              return palautus + "Tuli tasapeli"
+        return palautus + "Tuli tasapeli"
       
