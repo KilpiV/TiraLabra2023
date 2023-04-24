@@ -9,4 +9,8 @@ Yksikkötestaus suoritetaan unittestiä käyttäen automaattisesti
 
 Tehty alustavaa empiiristä tutkimusta ylimääräisten tulostusten avulla, että tekoäly toimisi varmasti oikein ja vaihtaa oikeassa kohtaa mallia. Aloitettu myös taulukon teko tarkempaa testausta ja sen dokumentointia varten.
 
+Yksinkertainen testi syötteellä "kkkkkkkkkkkkkk"
 
+![testiaineisto taulukko](https://github.com/KilpiV/TiraLabra2023/blob/main/Dokumentaatio/KSP-testi-k-t.pdf)
+
+![testitulostus ohjelmasta](https://github.com/KilpiV/TiraLabra2023/blob/main/Dokumentaatio/testaus_k_t.md)
