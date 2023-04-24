@@ -1,3 +1,4 @@
+
 KIVI, SAKSET, PAPERI!
 
 Valitse kivi (k), sakset (s) tai paperi (p), muilla lopettaa  k
@@ -90,7 +91,7 @@ mallin 5 pisteet on: 0 ja valinta olisi: k
 mallin 4 pisteet on: 1 ja valinta olisi: p
 mallin 3 pisteet on: 2 ja valinta olisi: p
 mallin 2 pisteet on: 3 ja valinta olisi: p
-mallin 1 pisteet on: 3 ja valinta olisi: p
+mallin 1 pisteet on: 4 ja valinta olisi: p
 tekoälyn valinta on:  p
 
 kivi vastaan paperi
@@ -103,8 +104,8 @@ Valitse kivi (k), sakset (s) tai paperi (p), (x) lopettaa  k
 mallin 5 pisteet on: 1 ja valinta olisi: p
 mallin 4 pisteet on: 2 ja valinta olisi: p
 mallin 3 pisteet on: 3 ja valinta olisi: p
-mallin 2 pisteet on: 3 ja valinta olisi: p
-mallin 1 pisteet on: 3 ja valinta olisi: p
+mallin 2 pisteet on: 4 ja valinta olisi: p
+mallin 1 pisteet on: 5 ja valinta olisi: p
 tekoälyn valinta on:  p
 
 kivi vastaan paperi
@@ -116,9 +117,9 @@ kivi vastaan paperi
 Valitse kivi (k), sakset (s) tai paperi (p), (x) lopettaa  k
 mallin 5 pisteet on: 2 ja valinta olisi: p
 mallin 4 pisteet on: 3 ja valinta olisi: p
-mallin 3 pisteet on: 3 ja valinta olisi: p
-mallin 2 pisteet on: 3 ja valinta olisi: p
-mallin 1 pisteet on: 3 ja valinta olisi: p
+mallin 3 pisteet on: 4 ja valinta olisi: p
+mallin 2 pisteet on: 5 ja valinta olisi: p
+mallin 1 pisteet on: 5 ja valinta olisi: p
 tekoälyn valinta on:  p
 
 kivi vastaan paperi
@@ -129,10 +130,10 @@ kivi vastaan paperi
 
 Valitse kivi (k), sakset (s) tai paperi (p), (x) lopettaa  k
 mallin 5 pisteet on: 3 ja valinta olisi: p
-mallin 4 pisteet on: 3 ja valinta olisi: p
-mallin 3 pisteet on: 3 ja valinta olisi: p
-mallin 2 pisteet on: 3 ja valinta olisi: p
-mallin 1 pisteet on: 3 ja valinta olisi: p
+mallin 4 pisteet on: 4 ja valinta olisi: p
+mallin 3 pisteet on: 5 ja valinta olisi: p
+mallin 2 pisteet on: 5 ja valinta olisi: p
+mallin 1 pisteet on: 5 ja valinta olisi: p
 tekoälyn valinta on:  p
 
 kivi vastaan paperi
@@ -142,11 +143,11 @@ kivi vastaan paperi
        0 - 7
 
 Valitse kivi (k), sakset (s) tai paperi (p), (x) lopettaa  k
-mallin 5 pisteet on: 3 ja valinta olisi: p
-mallin 4 pisteet on: 3 ja valinta olisi: p
-mallin 3 pisteet on: 3 ja valinta olisi: p
-mallin 2 pisteet on: 3 ja valinta olisi: p
-mallin 1 pisteet on: 3 ja valinta olisi: p
+mallin 5 pisteet on: 4 ja valinta olisi: p
+mallin 4 pisteet on: 5 ja valinta olisi: p
+mallin 3 pisteet on: 5 ja valinta olisi: p
+mallin 2 pisteet on: 5 ja valinta olisi: p
+mallin 1 pisteet on: 5 ja valinta olisi: p
 tekoälyn valinta on:  p
 
 kivi vastaan paperi
@@ -156,11 +157,11 @@ kivi vastaan paperi
        0 - 8
 
 Valitse kivi (k), sakset (s) tai paperi (p), (x) lopettaa  k
-mallin 5 pisteet on: 3 ja valinta olisi: p
-mallin 4 pisteet on: 3 ja valinta olisi: p
-mallin 3 pisteet on: 3 ja valinta olisi: p
-mallin 2 pisteet on: 3 ja valinta olisi: p
-mallin 1 pisteet on: 3 ja valinta olisi: p
+mallin 5 pisteet on: 5 ja valinta olisi: p
+mallin 4 pisteet on: 5 ja valinta olisi: p
+mallin 3 pisteet on: 5 ja valinta olisi: p
+mallin 2 pisteet on: 5 ja valinta olisi: p
+mallin 1 pisteet on: 5 ja valinta olisi: p
 tekoälyn valinta on:  p
 
 kivi vastaan paperi
@@ -170,11 +171,11 @@ kivi vastaan paperi
        0 - 9
 
 Valitse kivi (k), sakset (s) tai paperi (p), (x) lopettaa  k
-mallin 5 pisteet on: 3 ja valinta olisi: p
-mallin 4 pisteet on: 3 ja valinta olisi: p
-mallin 3 pisteet on: 3 ja valinta olisi: p
-mallin 2 pisteet on: 3 ja valinta olisi: p
-mallin 1 pisteet on: 3 ja valinta olisi: p
+mallin 5 pisteet on: 5 ja valinta olisi: p
+mallin 4 pisteet on: 5 ja valinta olisi: p
+mallin 3 pisteet on: 5 ja valinta olisi: p
+mallin 2 pisteet on: 5 ja valinta olisi: p
+mallin 1 pisteet on: 5 ja valinta olisi: p
 tekoälyn valinta on:  p
 
 kivi vastaan paperi
@@ -184,11 +185,11 @@ kivi vastaan paperi
        0 - 10
 
 Valitse kivi (k), sakset (s) tai paperi (p), (x) lopettaa  k
-mallin 5 pisteet on: 3 ja valinta olisi: p
-mallin 4 pisteet on: 3 ja valinta olisi: p
-mallin 3 pisteet on: 3 ja valinta olisi: p
-mallin 2 pisteet on: 3 ja valinta olisi: p
-mallin 1 pisteet on: 3 ja valinta olisi: p
+mallin 5 pisteet on: 5 ja valinta olisi: p
+mallin 4 pisteet on: 5 ja valinta olisi: p
+mallin 3 pisteet on: 5 ja valinta olisi: p
+mallin 2 pisteet on: 5 ja valinta olisi: p
+mallin 1 pisteet on: 5 ja valinta olisi: p
 tekoälyn valinta on:  p
 
 kivi vastaan paperi

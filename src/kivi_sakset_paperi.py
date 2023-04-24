@@ -11,7 +11,7 @@ class KiviSaksetPaperi:
     def kivi_sakset_paperi_peli(self):
         self.tulokset = Tulokset()
         self.puu = Puu()
-        vaikuttavat_pelit = 3
+        vaikuttavat_pelit = 5
         self.mallit = []
         mallien_maara = 5
         for i in range(mallien_maara):
