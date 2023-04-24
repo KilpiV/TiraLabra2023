@@ -12,8 +12,10 @@ class Vastustaja:
     def anna_valinta(self):
         paras = self.nyt_malli.pisteet()
         for malli in self.mallit:
+            print("mallin",malli.syvyys,"pisteet on:", malli.pisteet(), "ja valinta olisi:", malli.seuraava)
             if malli.pisteet() > paras:
                 paras = malli.pisteet()
                 self.nyt_malli = malli
+                print("vaihtuu malli", malli.syvyys, "pisteet:", paras)
         print("tekoälyn valinta on: ",self.nyt_malli.seuraava)
         return self.nyt_malli.seuraava
