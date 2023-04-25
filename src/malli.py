@@ -4,9 +4,7 @@ class Malli:
     def __init__(self, malli, vaikuttavat_pelit, puu: Puu, eka = "k"):
         self.puu = puu
         self.syvyys = malli
-        self.__pisteet = []
-        for i in range(vaikuttavat_pelit):
-            self.__pisteet.append(0)
+        self.__pisteet = [0]*vaikuttavat_pelit
         self.indeksi = 0
         self.seuraava = eka
 
@@ -20,14 +18,14 @@ class Malli:
         return self.seuraava
 
     def paivita_tn_voittaja(self, taulukko):
-        k = taulukko[0]
-        s = taulukko[1]
-        p = taulukko[2]
-        if k > s and k >= p:
+        kivet = taulukko[0]
+        sakset = taulukko[1]
+        paperit = taulukko[2]
+        if kivet > sakset and kivet >= paperit:
             self.seuraava = "p"
-        elif s > p and s >= k:
+        elif sakset > paperit and sakset >= kivet:
             self.seuraava = "k"
-        elif p > k and p >= s:
+        elif paperit > kivet and paperit >= sakset:
             self.seuraava = "s"
 
     def paivita_pisteet(self, pelaajan_valinta):

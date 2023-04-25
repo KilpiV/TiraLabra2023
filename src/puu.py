@@ -2,12 +2,9 @@ class Puu:
     def __init__(self):
         self.puu = {}
 
-    def etsi(self, valinta): 
-        print(self.puu[valinta])
-
     def kaikki(self):
         return self.puu
-        
+
     def lisaa(self, valinnat):
         pituus = len(valinnat)
         for i in range(pituus):
@@ -20,8 +17,7 @@ class Puu:
     def hae(self, valinnat):
         if valinnat in self.puu:
             return self.puu[valinnat]
-        else:
-            return 0
+        return 0
 
     def hae_lapset(self, valinnat):
         lisays = "ksp"
@@ -31,5 +27,3 @@ class Puu:
             listalle = self.hae(valinta)
             lista.append(listalle)
         return lista
-
-

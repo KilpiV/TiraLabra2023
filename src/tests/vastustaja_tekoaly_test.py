@@ -3,6 +3,7 @@ from vastustaja_tekoaly import Vastustaja
 
 class TestVastustaja(unittest.TestCase):
     def setUp(self):
+        mallit_mock = Mock()
         lista = [2, 4, 3]
         self.vastustaja = Vastustaja(lista)
         print("testataan!!!")
