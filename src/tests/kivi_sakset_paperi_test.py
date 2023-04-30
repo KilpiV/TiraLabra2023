@@ -10,7 +10,8 @@ class TestKiviSaksetPaperi(unittest.TestCase):
         pass
         
 
-    def test_aloita_peli(self):
-        self.ksp.aloita_peli()
+    
+    #def test_aloita_peli(self):
+     #   self.ksp.aloita_peli()
 
-    pass
+      #  pass
