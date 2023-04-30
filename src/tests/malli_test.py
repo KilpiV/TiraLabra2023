@@ -72,3 +72,10 @@ class TestMalli(unittest.TestCase):
         self.malli.paivita_pisteet("p")
         pisteet = self.malli.pisteet()
         self.assertEqual(pisteet, -3)
+
+    def test_hae_seuraava_toimii(self):
+        puu_mock = Mock()
+        puu_mock.hae_lapset.return_value = [0, 0, 0]
+        malli = Malli(1, 2, puu_mock)
+        malli.hae_seuraava("k")
+        puu_mock.hae_lapset.assert_called_with("k")
