@@ -8,6 +8,10 @@ Aiheenani on Kivi-Sakset-Paperi-peluri.
 
 [testausdokumentti](https://github.com/KilpiV/TiraLabra2023/blob/main/Dokumentaatio/testausdokumentti.md)
 
+[toteutusdokumentti](https://github.com/KilpiV/TiraLabra2023/blob/main/Dokumentaatio/toteutusdokumentti.md)
+
+[käyttöohje](https://github.com/KilpiV/TiraLabra2023/blob/main/Dokumentaatio/kayttoohje.md)
+
 
 ## Viikkoraportit
 
