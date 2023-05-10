@@ -38,11 +38,11 @@ class KiviSaksetPaperi:
 
     def vuoro(self, edelliset):
         for malli in self.mallit:
+            malli.paivita_pisteet(edelliset[-1])
+        for malli in self.mallit:
             if len(edelliset) >= malli.syvyys:
                 malli.hae_seuraava(edelliset)
         self.puu.lisaa(edelliset)
-        for malli in self.mallit:
-            malli.paivita_pisteet(edelliset[-1])
 
     def pelaajan_valinta(self, kirjain):
         pelaajan_valinta = ""
