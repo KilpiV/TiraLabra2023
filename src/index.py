@@ -1,8 +1,8 @@
-from kivi_sakset_paperi import KiviSaksetPaperi
+from kayttoliittyma import Kayttoliittyma
 
 def main():
-    uusi_peli = KiviSaksetPaperi()
-    uusi_peli.kivi_sakset_paperi_peli()
+    kayttis = Kayttoliittyma()
+    kayttis.aloita_peli()
 
 if __name__ == "__main__":
     main()

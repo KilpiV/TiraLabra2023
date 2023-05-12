@@ -7,52 +7,37 @@ class KiviSaksetPaperi:
     """Pelilogiikka
 
     """
-    def __init__(self):
+    def __init__(self, mallien_maara, vaikuttavat_pelit, tulokset = Tulokset(), puu=Puu()):
         self.tulokset = Tulokset()
         self.puu = Puu()
-        vaikuttavat_pelit = 5
-        self.mallit = []
-        mallien_maara = 5
+        mallit = []
         for i in range(mallien_maara):
-            self.mallit.append(Malli(mallien_maara-i, vaikuttavat_pelit, self.puu))
-        self.vastustaja = Vastustaja(self.mallit)
+            mallit.append(Malli(mallien_maara-i, vaikuttavat_pelit, self.puu))
+        self.vastustaja = Vastustaja(mallit)
 
-    def kivi_sakset_paperi_peli(self):
-        self.aloita_peli()
-        print(self.tulokset.lopputilasto())
+    def tilanne(self, pelaaja, vastustaja):
+        self.tulokset.tulos(pelaaja, vastustaja)
+        return self.tulokset
 
-    def aloita_peli(self):
-        print("\nKIVI, SAKSET, PAPERI!")
-        pelaaja = input("\nValitse kivi (k), sakset (s) tai paperi (p), muilla lopettaa  ")
-        pelatut = ""
-        while self._peli_loppuu(pelaaja):
-            if self._peli_jatkuu(pelaaja):
-                vastustajan_valinta = self.vastustaja.anna_valinta()
-                print(f"\n{self.pelaajan_valinta(pelaaja)} "\
-                    f"vastaan {self.pelaajan_valinta(vastustajan_valinta)}")
-                pelatut += pelaaja
-                self.vuoro(pelatut)
-                self.tulokset.tulos(pelaaja, vastustajan_valinta)
-                print(self.tulokset)
-            pelaaja = input("\nValitse kivi (k), sakset (s) tai paperi (p), (x) lopettaa  ")
+    def lopputilasto(self):
+        return self.tulokset.lopputilasto()
 
     def vuoro(self, edelliset):
-        for malli in self.mallit:
-            if len(edelliset) >= malli.syvyys:
-                malli.hae_seuraava(edelliset)
+        self.vastustaja.paivita_mallit(edelliset)
         self.puu.lisaa(edelliset)
-        for malli in self.mallit:
-            malli.paivita_pisteet(edelliset[-1])
 
     def pelaajan_valinta(self, kirjain):
-        pelaajan_valinta = ""
-        if kirjain == "k":
-            pelaajan_valinta = "kivi"
-        elif kirjain == "s":
-            pelaajan_valinta = "sakset"
-        elif kirjain == "p":
-            pelaajan_valinta = "paperi"
-        return pelaajan_valinta
+        valinnat = {"k": "kivi", "s": "sakset", "p": "paperi"}
+        return valinnat[kirjain]
+        #korvattu sanakirjalla ehdotetusti...
+#        pelaajan_valinta = ""
+ #       if kirjain == "k":
+  #          pelaajan_valinta = "kivi"
+   #     elif kirjain == "s":
+    #        pelaajan_valinta = "sakset"
+     #   elif kirjain == "p":
+      #      pelaajan_valinta = "paperi"
+       # return pelaajan_valinta
 
     def _peli_loppuu(self, siirto):
         return siirto not in ("x", "X")
