@@ -1,41 +1,33 @@
 import unittest
 from kivi_sakset_paperi import KiviSaksetPaperi
 from tulokset import Tulokset
-from puu import Puu
 from unittest.mock import Mock, patch
 
 class TuloksetStub:
     def __init__(self, tulostukset):
         self.tulostus = "lapi meni"
-        pass
+        #self.tulos = 0
+        self.__str__ = "teksti"
 
     def lopputilasto(self):
         return self.tulostus
+    
+    def tulos(self, eka, toka):
+        pass
 
 class VastustajaStub:
     def __init__(self):
         self.syotteet = ""
-        pass
 
     def paivita_mallit(self, syote):
         self.syotteet += syote
 
-class PuuStub:
-    def __init__(self):
-        pass
-
 class TestKiviSaksetPaperi(unittest.TestCase):
     def setUp(self):
         stub_tulokset = TuloksetStub([])
-        stub_puu = PuuStub()
-        self.mock_peli = Mock(wraps=KiviSaksetPaperi(1, 1, stub_tulokset, stub_puu))
-        #self.mock_peli_tulos = TuloksetStub()
-        #self.mock_peli_vastus = VastustajaStub()
-        #self.peli = KiviSaksetPaperi(1, 1)
-        pass
+        self.mock_peli = Mock(wraps=KiviSaksetPaperi(1, 1, stub_tulokset))
         
     def test_tilanne(self):
-        #tulos_mock = Mock(wraps=KiviSaksetPaperi(1, 1))
         tilanne = self.mock_peli.tilanne("k", "k")
         self.mock_peli.tilanne.assert_called_with("k", "k")
         self.mock_peli.tilanne.return_value = "testi läpi"
@@ -44,12 +36,13 @@ class TestKiviSaksetPaperi(unittest.TestCase):
     
     def test_lopputilasto(self):
         lapi = self.mock_peli.lopputilasto()
-        palautus = "\nLopputulokset:\n\n"
-        palautus +=(f"Pelejä yhteensä 0\n")
-        palautus += (f"Pelaajan voitot: 0\n")
-        palautus += (f"Pelaajan tappiot: 0\n")
-        palautus += (f"Tasapelit: 0\n")
-        palautus += "Tuli tasapeli"
+#        palautus = "\nLopputulokset:\n\n"
+ #       palautus +=(f"Pelejä yhteensä 0\n")
+  #      palautus += (f"Pelaajan voitot: 0\n")
+   #     palautus += (f"Pelaajan tappiot: 0\n")
+    #    palautus += (f"Tasapelit: 0\n")
+     #   palautus += "Tuli tasapeli"
+        palautus = "lapi meni"
         self.assertEqual(lapi, palautus)
 
     def test_vuoro(self):
@@ -60,17 +53,17 @@ class TestKiviSaksetPaperi(unittest.TestCase):
         testit_ei_lopu = "k","a", "kk", " ", "K"
         testit_loppuu = "x","X"
         for i in testit_ei_lopu:
-            self.assertTrue(self.mock_peli._peli_loppuu(i))
-        self.assertFalse(self.mock_peli._peli_loppuu(testit_loppuu[0]))
-        self.assertFalse(self.mock_peli._peli_loppuu(testit_loppuu[1]))
+            self.assertTrue(self.mock_peli.peli_loppuu(i))
+        self.assertFalse(self.mock_peli.peli_loppuu(testit_loppuu[0]))
+        self.assertFalse(self.mock_peli.peli_loppuu(testit_loppuu[1]))
     
     def test_peli_jatkuu(self):
         jatkuu = "k", "s", "p"
         for i in jatkuu:
-            self.assertTrue(self.mock_peli._peli_jatkuu(i))
+            self.assertTrue(self.mock_peli.peli_jatkuu(i))
         ei_jatku = "seis", 3, "kk", " ", "K", "a", "x"
         for i in ei_jatku:
-            self.assertFalse(self.mock_peli._peli_jatkuu(i))
+            self.assertFalse(self.mock_peli.peli_jatkuu(i))
 
     def test_pelaajan_valinta(self):
         valinta = self.mock_peli.pelaajan_valinta("k")

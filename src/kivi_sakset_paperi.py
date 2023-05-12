@@ -7,8 +7,8 @@ class KiviSaksetPaperi:
     """Pelilogiikka
 
     """
-    def __init__(self, mallien_maara, vaikuttavat_pelit, tulokset = Tulokset(), puu=Puu()):
-        self.tulokset = Tulokset()
+    def __init__(self, mallien_maara, vaikuttavat_pelit, tulokset = Tulokset()):
+        self.tulokset = tulokset
         self.puu = Puu()
         mallit = []
         for i in range(mallien_maara):
@@ -39,10 +39,11 @@ class KiviSaksetPaperi:
       #      pelaajan_valinta = "paperi"
        # return pelaajan_valinta
 
-    def _peli_loppuu(self, siirto):
+    def peli_loppuu(self, siirto):
         return siirto not in ("x", "X")
         #return siirto != "x" and siirto != "X"
 
-    def _peli_jatkuu(self, siirto):
+    def peli_jatkuu(self, siirto):
         return siirto in ("k", "s", "p")
         #return siirto == "k" or siirto == "s" or siirto == "p"
+        
