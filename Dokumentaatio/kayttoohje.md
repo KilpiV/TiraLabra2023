@@ -4,7 +4,7 @@
 
 ### Ohjelma
 
-Aloita ohjelma terminaalissa käskyllä:
+Aloita ohjelma terminaalissa juurikansiossa käskyllä:
 ```bash
 python3 src/index.py
 ```
