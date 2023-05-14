@@ -27,3 +27,4 @@ Aiheenani on Kivi-Sakset-Paperi-peluri.
 
 [viikko 6](https://github.com/KilpiV/TiraLabra2023/blob/main/Dokumentaatio/Viikkoraportit/Viikko6.md)
 
+[viimeinen viikko](https://github.com/KilpiV/TiraLabra2023/blob/main/Dokumentaatio/Viikkoraportit/Loppurutistus.md)
