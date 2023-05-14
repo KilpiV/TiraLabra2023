@@ -14,7 +14,7 @@ syötteenä toimi "kkkkkkkkkkkkkk"
 
 *Ensin laskettuna taulukkoon mitä tulisi olla minkäkin mallin tulos ja tekoälyn valinta ja mallin vaihto.*
 
-![testiaineisto taulukko](https://github.com/KilpiV/TiraLabra2023/blob/main/Dokumentaatio/KSP-testi-k-t.pdf)
+![testiaineisto taulukko](https://github.com/KilpiV/TiraLabra2023/blob/main/Dokumentaatio/KSP-testi-k-t.png)
 
 *Sitten samoilla valinnoilla ohjelmalla tehty testi, lisätulostuksilla.*
 
