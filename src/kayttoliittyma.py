@@ -1,4 +1,5 @@
 from kivi_sakset_paperi import KiviSaksetPaperi
+import random
 
 class Kayttoliittyma:
     """Käyttis
@@ -41,3 +42,23 @@ class Kayttoliittyma:
     def kysy_valinta(self):
         valinta = input("\nValitse kivi (k), sakset (s) tai paperi (p), (x):llä lopettaa  ")
         return valinta
+
+    def tuota_saannolliset(self, siemen_luku):
+        random.seed(siemen_luku)
+        syote = ""
+        valinnat = "kpskps", "ppskkk", "skkpsp", "kkppks", "kpsppp",\
+            "kpskpk", "pspskk", "skkkps", "kkpspk", "kpspkp"
+        for i in range(17): 
+            syote += valinnat[random.randrange(10)]
+        syote = syote[:100]+"x"
+        return syote
+
+    def testaa_sata(self, syote):
+        indeksi = 0
+        pelaaja = syote[indeksi]
+        while self.peli.peli_loppuu(pelaaja):
+            self.vuoro(pelaaja)
+            indeksi += 1
+            pelaaja = syote[indeksi]
+        print(self.peli.lopputilasto())
+        
