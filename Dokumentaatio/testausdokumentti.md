@@ -11,7 +11,7 @@ Tehty empiiristä tutkimusta ylimääräisten tulostusten avulla, että tekoäly
 
 ## Yksinkertainen testi 
 syötteenä toimi "kkkkkkkkkkkkkk"
-*Ensin laskettuna taulukkoon mitä tulisi olla minkäkin mallin tulos ja tekoälyn valinta ja mallin vaihto.*
+*Ensin laskettuna taulukkoon mitä tulisi olla minkäkin mallin tulos ja tekoälyn valinta ja mallin vaihto. Ohjelma toimi oikein.*
 
 ![testiaineisto taulukko](https://github.com/KilpiV/TiraLabra2023/blob/main/Dokumentaatio/kuvat/KSP-testi-k-t.png)
 
