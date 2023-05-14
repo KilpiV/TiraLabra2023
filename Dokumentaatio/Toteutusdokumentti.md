@@ -78,11 +78,9 @@ Lisäksi tallennnetaan n-mittainen merkkijono-taulukko. Eli kokonaistilavaativuu
 
 ## Lähteet
 
-Tärkeimpinä lähteinä toimivat: 
+1. Wikipedia:
+	- Wikipedia, Markovin ketju, 2022 [https://fi.wikipedia.org/wiki/Markovin_ketju](https://fi.wikipedia.org/wiki/Markovin_ketju), luettu 15.3.2013
+	- Wikipedia, Markov chain, 2023 [https://en.wikipedia.org/wiki/Markov_chain](https://en.wikipedia.org/wiki/Markov_chain), luettu 21.3.2023
 
-[Markovin_ketju Wikipedia](https://fi.wikipedia.org/wiki/Markovin_ketju)
-
-[Markov_chain](https://en.wikipedia.org/wiki/Markov_chain)
-
-[Multi-AI raportti](https://arxiv.org/pdf/2003.06769.pdf)
+2. Wang L, Huang W, Li Y, Evans j, He S. Multi‑Ai competing and winning against humans in iterated Rock‑paper‑Scissors game [-raportti](https://arxiv.org/pdf/2003.06769.pdf), doi: https://doi.org/10.1038/s41598-020-70544-7, luettu 20.3.2023
 
