@@ -7,7 +7,7 @@ Yksikkötestaus suoritetaan unittestiä käyttäen automaattisesti
 
 ![pylint](https://github.com/KilpiV/TiraLabra2023/blob/main/Dokumentaatio/kuvat/pylint_taso.png)
 
-Tehty alustavaa empiiristä tutkimusta ylimääräisten tulostusten avulla, että tekoäly toimisi varmasti oikein ja vaihtaa oikeassa kohtaa mallia. Aloitettu myös taulukon teko tarkempaa testausta ja sen dokumentointia varten.
+Tehty empiiristä tutkimusta ylimääräisten tulostusten avulla, että tekoäly toimisi varmasti oikein ja vaihtaa oikeassa kohtaa mallia. Alempana tarkempaa testausta.
 
 ## Yksinkertainen testi 
 syötteenä toimi "kkkkkkkkkkkkkk"
@@ -76,4 +76,4 @@ kayttoliittyma.py
             pelaaja = syote[indeksi]
         print(self.peli.lopputilasto())
 ```
-eli luodaan seedin avulla "satunnainen" syöte, joka koostuu kuuden mittaisista osajonoista, joten syötteeseen saadaan toisteisuutta ja siten tekoäly toimimaan.
+eli luodaan seedin avulla "satunnainen" syöte, joka koostuu kuuden mittaisista osajonoista, joten syötteeseen saadaan toisteisuutta ja siten tekoäly toimimaan, mutta testaus pystytään toisintamaan tarvittaessa.
