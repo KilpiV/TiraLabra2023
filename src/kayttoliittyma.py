@@ -6,14 +6,14 @@ class Kayttoliittyma:
 
     def __init__(self):
         syote = input("Anna mallien määrä (1-9), oletusarvo on 5 ")
-        mallien_maara = 5
+        self.mallien_maara = 5
         if syote in ("1", "2", "3", "4", "5", "6", "7", "8", "9"):
-            mallien_maara = int(syote)
+            self.mallien_maara = int(syote)
         syote = input("Anna malleihin vaikuttavien vuorojen määrä (1-7), oletusarvo on 5 ")
         vaikuttavat_pelit = 5
         if syote in ("1", "2", "3", "4", "5", "6", "7"):
             vaikuttavat_pelit = int(syote)
-        self.peli = KiviSaksetPaperi(mallien_maara, vaikuttavat_pelit)
+        self.peli = KiviSaksetPaperi(self.mallien_maara, vaikuttavat_pelit)
         self.pelatut = ""
 
     def aloita_peli(self):
@@ -29,7 +29,8 @@ class Kayttoliittyma:
             vastustajan_valinta = self.peli.vastustaja.anna_valinta()
             self.tulosta_valinnat(pelaaja, vastustajan_valinta)
             self.pelatut += pelaaja
-            self.peli.vuoro(self.pelatut[-6:])
+            k = self.mallien_maara
+            self.peli.vuoro(self.pelatut[-k:])
             tilanne = self.peli.tilanne(pelaaja, vastustajan_valinta)
             print(tilanne)
 
