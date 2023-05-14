@@ -25,15 +25,20 @@ Testauksessa käytetty syöte:
 ```bash
 skkpspkpspkpppskkkkpspppppskkkskkkpsskkkpsskkkpspspskkkkppksppskkkskkkpskpskpspspskkpspskkkpspkpkpskx
 ```
+
+
+
+#### Mallien määrän vaikutus tekoälyn voittoihin, kun vaikuttavat kierrokset on 5 ja mallien määrä vaihtuu.
 ![mallit](https://github.com/KilpiV/TiraLabra2023/blob/main/Dokumentaatio/kuvat/mallien-maaran-vaikutus.png)
 
-Mallien määrän vaikutus tekoälyn voittoihin, kun vaikuttavat kierrokset on 5 ja mallien määrä vaihtuu.
+
+#### Mallien määrän vaikutus voittojen ja häviöiden suhteesee, kun vaikuttavat kierrokset on 5 ja mallien määrä vaihtuu.
 ![mallit-ei-tasa](https://github.com/KilpiV/TiraLabra2023/blob/main/Dokumentaatio/kuvat/mallien-maaran-vaikutus-ei-tasapelia.png)
 
-Mallien määrän vaikutus voittojen ja häviöiden suhteesee, kun vaikuttavat kierrokset on 5 ja mallien määrä vaihtuu.
+
+#### Häviöiden, voittojen ja tasapelien suhde kun vaikuttavien kierrosten määrän vaihtuu ja mallien määrä on 5.
 ![kierrokset](https://github.com/KilpiV/TiraLabra2023/blob/main/Dokumentaatio/kuvat/vaikuttavien-kierrosten-testaus.png)
 
-Häviöiden, voittojen ja tasapelien suhde kun vaikuttavien kierrosten määrän vaihtuu ja mallien määrä on 5.
 
 Testauksessa käytetty koodi muutos index.py tiedostossa.
 ```bash
