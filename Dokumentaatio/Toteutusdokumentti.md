@@ -72,6 +72,8 @@ Lisäksi tallennnetaan n-mittainen merkkijono-taulukko. Eli kokonaistilavaativuu
 - [ ] Joku tulostus jäänyt käyttiksen ulkopuolelle, sen voisi siirtää
 - [ ] Mallien luonti Vastustaja-luokalle.
 - [ ] Pelaajan tietojen tallennus, pelin nollaus vain pyynnöstä.
+- [ ] Testauksen ainestoa voisi miettiä lisää ja pidemmälle, esim että jokaisen mallin mittaisia osajonoja tulisi varmasti mukaan useampi. 
+- [ ] Testata pelattujen kierrosten määrän vaikutusta AI:n voittojen suhteeseen. 
 
 ## Lähteet
 
