@@ -27,13 +27,13 @@ class Kayttoliittyma:
     def vuoro(self, pelaaja):
         if self.peli.peli_jatkuu(pelaaja):
             vastustajan_valinta = self.peli.vastustaja.anna_valinta()
-            self.tulosta_tilanne(pelaaja, vastustajan_valinta)
+            self.tulosta_valinnat(pelaaja, vastustajan_valinta)
             self.pelatut += pelaaja
             self.peli.vuoro(self.pelatut[-6:])
             tilanne = self.peli.tilanne(pelaaja, vastustajan_valinta)
             print(tilanne)
 
-    def tulosta_tilanne(self, pelaaja, vastustaja):
+    def tulosta_valinnat(self, pelaaja, vastustaja):
         print((f"\n{self.peli.pelaajan_valinta(pelaaja)} "\
             f"vastaan {self.peli.pelaajan_valinta(vastustaja)}"))
 
