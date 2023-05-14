@@ -38,5 +38,5 @@ class Kayttoliittyma:
             f"vastaan {self.peli.pelaajan_valinta(vastustaja)}"))
 
     def kysy_valinta(self):
-        valinta = input("\nValitse kivi (k), sakset (s) tai paperi (p), muilla lopettaa  ")
+        valinta = input("\nValitse kivi (k), sakset (s) tai paperi (p), (x):llä lopettaa  ")
         return valinta
